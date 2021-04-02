@@ -1,0 +1,13 @@
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.yxb.dubboprovider.service
+  application:
+    name: dubbo_provider
+  registry:
+    protocol: zookeeper
+    address: zookeeper://192.168.33.10:2181
+server:
+  port: 8080
